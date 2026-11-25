@@ -1,0 +1,21 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Dataset files
+data/
+*.xlsx
+*.csv
+*.zip
+
+# Credentials
+.env
+.env.*
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
