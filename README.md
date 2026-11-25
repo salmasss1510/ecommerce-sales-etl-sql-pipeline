@@ -224,3 +224,16 @@ Run the analytical queries and build database views using `sql_queries.sql` on y
 * Monthly and yearly revenue trends
 * Top-performing products & countries by revenue
 * High-value customer identification
+
+## Dashboard Preview
+
+The dashboard connects to the MySQL data warehouse and visualizes key sales metrics, monthly revenue trends, top-performing products, and revenue distribution across countries.
+
+### Dashboard Overview
+![Dashboard Overview](screenshots/dashboard-overview.png)
+
+### Top 10 Products by Revenue
+![Top Products](screenshots/top-products.png)
+
+### Revenue by Country
+![Revenue by Country](screenshots/revenue-by-country.png)
