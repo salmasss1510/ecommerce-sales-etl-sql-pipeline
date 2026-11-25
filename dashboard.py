@@ -1,6 +1,10 @@
+import os
+from dotenv import load_dotenv
 import streamlit as st
 import mysql.connector
 import plotly.express as px
+
+load_dotenv()
 
 # --------------------------------------------------
 # PAGE CONFIGURATION
@@ -17,11 +21,11 @@ st.set_page_config(
 # --------------------------------------------------
 
 connection = mysql.connector.connect(
-    host="localhost",
-    port=3306,
-    user="root",
-    password="root",
-    database="ecommerce_dw"
+    host=os.getenv("MYSQL_HOST", "localhost"),
+    port=int(os.getenv("MYSQL_PORT", 3306)),
+    user=os.getenv("MYSQL_USER", "root"),
+    password=os.getenv("MYSQL_PASSWORD"),
+    database=os.getenv("MYSQL_DATABASE", "ecommerce_dw")
 )
 
 cursor = connection.cursor()

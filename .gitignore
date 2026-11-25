@@ -12,6 +12,7 @@ data/
 # Credentials
 .env
 .env.*
+!.env.example
 
 # IDE files
 .vscode/
